@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal App - Cổng Thông Tin Nội Bộ | PTIT DevOps</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #10b981;
+            --primary-glow: rgba(16, 185, 129, 0.25);
+            --bg-dark: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.75);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-dark);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-main);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 640px;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 48px 40px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 40px var(--primary-glow);
+            text-align: center;
+            position: relative;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(16, 185, 129, 0.15);
+            color: #34d399;
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+        .badge-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--primary);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--primary);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: #ffffff;
+        }
+
+        .desc {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 32px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 32px;
+            text-align: left;
+        }
+
+        .info-box {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .info-label {
+            font-size: 11px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        .info-val {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-top: 6px;
+            font-family: 'Consolas', monospace;
+        }
+
+        .footer-note {
+            font-size: 13px;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="badge">
+            <span class="badge-dot"></span>
+            PORT 8090 &bull; INTERNAL NETWORK
+        </div>
+
+        <h1>Trang Thông Tin Nội Bộ (Internal App)</h1>
+
+        <p class="desc">
+            Cổng thông tin và bảng điều khiển nội bộ dành riêng cho đội ngũ kỹ sư vận hành hạ tầng DevOps.
+        </p>
+
+        <section class="info-grid">
+            <div class="info-box">
+                <div class="info-label">Cổng Dịch Vụ</div>
+                <div class="info-val">8090 (TCP)</div>
+            </div>
+            <div class="info-box">
+                <div class="info-label">Thư Mục Gốc</div>
+                <div class="info-val">/var/www/internal-app/html</div>
+            </div>
+            <div class="info-box">
+                <div class="info-label">Trạng Thái</div>
+                <div class="info-val">Running</div>
+            </div>
+        </section>
+
+        <footer class="footer-note">
+            PTIT DevOps Course - Session 03 &bull; Virtual Host 2
+        </footer>
+    </main>
+</body>
+</html>

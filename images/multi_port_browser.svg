@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="960" height="560" fill="rgb(15, 23, 42)" rx="10" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+  <!-- Left Window: Port 8080 (Beta App) -->
+  <g transform="translate(20, 20)">
+    <!-- Header -->
+    <rect width="445" height="520" rx="10" fill="rgb(30, 41, 59)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <rect width="445" height="38" rx="10" fill="rgb(20, 28, 45)"/>
+    <rect y="28" width="445" height="10" fill="rgb(20, 28, 45)"/>
+    <circle cx="18" cy="19" r="5" fill="#ef4444"/>
+    <circle cx="34" cy="19" r="5" fill="#f59e0b"/>
+    <circle cx="50" cy="19" r="5" fill="#22c55e"/>
+
+    <!-- Address Bar -->
+    <rect x="75" y="8" width="350" height="22" rx="4" fill="rgb(15, 23, 42)"/>
+    <text x="88" y="23" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">http://128.199.200.100:8080</text>
+
+    <!-- Card Content -->
+    <g transform="translate(25, 60)">
+      <rect width="395" height="430" rx="12" fill="rgba(15, 23, 42, 0.7)" stroke="rgba(245, 158, 11, 0.2)" stroke-width="1"/>
+      <rect width="395" height="3" fill="#f59e0b"/>
+
+      <rect x="110" y="30" width="175" height="24" rx="12" fill="rgba(245, 158, 11, 0.15)"/>
+      <circle cx="125" cy="42" r="3.5" fill="#f59e0b"/>
+      <text x="135" y="46" fill="#fbbf24" font-family="'Inter', sans-serif" font-size="10" font-weight="700">PORT 8080 &bull; BETA TESTING</text>
+
+      <text x="197" y="95" text-anchor="middle" fill="#ffffff" font-family="'Inter', sans-serif" font-size="16" font-weight="800">Beta App Environment</text>
+      <text x="197" y="125" text-anchor="middle" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Trang kiểm thử ứng dụng độc lập</text>
+
+      <g transform="translate(25, 160)">
+        <rect width="345" height="180" rx="8" fill="rgba(30, 41, 59, 0.6)"/>
+        <text x="20" y="35" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Virtual Host:</text>
+        <text x="325" y="35" text-anchor="end" fill="#f59e0b" font-family="'Consolas', monospace" font-size="12">Port 8080</text>
+
+        <text x="20" y="75" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Document Root:</text>
+        <text x="325" y="75" text-anchor="end" fill="#f8fafc" font-family="'Consolas', monospace" font-size="11">/var/www/beta-app/html</text>
+
+        <text x="20" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Status:</text>
+        <text x="325" y="115" text-anchor="end" fill="#22c55e" font-family="'Consolas', monospace" font-size="12">HTTP 200 OK</text>
+
+        <text x="20" y="155" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Firewall Rule:</text>
+        <text x="325" y="155" text-anchor="end" fill="#38bdf8" font-family="'Consolas', monospace" font-size="12">UFW 8080/tcp ALLOW</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Window: Port 8090 (Internal App) -->
+  <g transform="translate(495, 20)">
+    <!-- Header -->
+    <rect width="445" height="520" rx="10" fill="rgb(30, 41, 59)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <rect width="445" height="38" rx="10" fill="rgb(20, 28, 45)"/>
+    <rect y="28" width="445" height="10" fill="rgb(20, 28, 45)"/>
+    <circle cx="18" cy="19" r="5" fill="#ef4444"/>
+    <circle cx="34" cy="19" r="5" fill="#f59e0b"/>
+    <circle cx="50" cy="19" r="5" fill="#22c55e"/>
+
+    <!-- Address Bar -->
+    <rect x="75" y="8" width="350" height="22" rx="4" fill="rgb(15, 23, 42)"/>
+    <text x="88" y="23" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">http://128.199.200.100:8090</text>
+
+    <!-- Card Content -->
+    <g transform="translate(25, 60)">
+      <rect width="395" height="430" rx="12" fill="rgba(15, 23, 42, 0.7)" stroke="rgba(16, 185, 129, 0.2)" stroke-width="1"/>
+      <rect width="395" height="3" fill="#10b981"/>
+
+      <rect x="105" y="30" width="185" height="24" rx="12" fill="rgba(16, 185, 129, 0.15)"/>
+      <circle cx="120" cy="42" r="3.5" fill="#10b981"/>
+      <text x="130" y="46" fill="#34d399" font-family="'Inter', sans-serif" font-size="10" font-weight="700">PORT 8090 &bull; INTERNAL NETWORK</text>
+
+      <text x="197" y="95" text-anchor="middle" fill="#ffffff" font-family="'Inter', sans-serif" font-size="16" font-weight="800">Internal Portal</text>
+      <text x="197" y="125" text-anchor="middle" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Trang thông tin quản trị nội bộ</text>
+
+      <g transform="translate(25, 160)">
+        <rect width="345" height="180" rx="8" fill="rgba(30, 41, 59, 0.6)"/>
+        <text x="20" y="35" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Virtual Host:</text>
+        <text x="325" y="35" text-anchor="end" fill="#10b981" font-family="'Consolas', monospace" font-size="12">Port 8090</text>
+
+        <text x="20" y="75" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Document Root:</text>
+        <text x="325" y="75" text-anchor="end" fill="#f8fafc" font-family="'Consolas', monospace" font-size="11">/var/www/internal-app/html</text>
+
+        <text x="20" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Status:</text>
+        <text x="325" y="115" text-anchor="end" fill="#22c55e" font-family="'Consolas', monospace" font-size="12">HTTP 200 OK</text>
+
+        <text x="20" y="155" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Firewall Rule:</text>
+        <text x="325" y="155" text-anchor="end" fill="#38bdf8" font-family="'Consolas', monospace" font-size="12">UFW 8090/tcp ALLOW</text>
+      </g>
+    </g>
+  </g>
+</svg>
